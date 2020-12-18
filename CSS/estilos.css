@@ -2,6 +2,8 @@
 body{
   margin: 0%;
   padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 *{
@@ -10,6 +12,7 @@ body{
 
 header{
   height: 20vh;
+  width: 100%;
   display: flex;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -18,23 +21,21 @@ header{
 .logo{
   width: 20%;
   height: 100%;
-  background-color: rgb(234, 237, 237);
   display: flex;
-
 }
 
 .imglogo{
-  padding-left: 30px;
-  width: 90%;
-
-/*VER COMO REDONDEAR ESQUINAS DEL LOGO*/
-
+  padding-left: 10px;
+  width: 100%;
+  border-right: 10px solid white;
+  border-radius: 35px;
 }
 
 nav{
   width: 80%;
   height: 100%;
   background-color: rgb(44, 62, 80);
+  border-radius: 10px;
   display: flex;
 }
 
@@ -53,65 +54,132 @@ a{
 
 .carousel-inner img {
     width: 100%;
-    max-height: 700px;
+    height: 450px;
 }
 
 .carousel-inner{
- height: 700px;
+ height: 450px;
 }
 
-
+/*CONSULTAR CÓMO HACER PARA QUE IMAGEN DE SLIDERS NO QUEDE TAN ESTIRADA, CÓMO MODIFICARLAS*/
 
 main{
-  height: 50vh;
-  background-color: rgb(202, 207, 210);
+  height: 100%;
+  width: 100%;
+  background-color: rgb(174, 182, 191);
+  border-top: 3px solid white;
   display: flex;
+  flex-wrap: wrap;
 
 }
 
 .seccion{
-
-height: 100%;
-width: 80%;
+width: 100%;
+border-bottom: 3px solid white;
+display: flex;
 }
 
 p{
+  width: 80%;
   color: black;
   text-align: justify;
   font-weight: bolder;
   padding-top: 30px;
   padding: 5% 5%;
+
+  }
+
+  .reg{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(44, 62, 80);
+    border-left: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button{
+  height: 8vh;
+  width: 8vw;
+  }
+
+  .registrarse{
+  font-size: 10px;
+  color: rgb(118, 215, 196);
+  text-decoration: underline;
+  padding-top: 5px;
+  }
+
+  .section2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.AdE{
+  width: 100%;
+  display: flex;
+  background-color: rgb(44, 62, 80);
+  justify-content: center;
+
+
+}
+
+  h3{
+    color: white;
+    font-weight: bolder;
+
+  }
+
+  .a_ej{
+    width: 50%;
+    height: 33%;
+    border-left: 3px solid  white;
+    border-bottom: 3px solid  white;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagenes{
+    justify-content: center;
+    display: flex;
+  }
+
+  .img{
+    height: 150px;
+    width: 150px;
+    border-radius: 30%;
+    justify-content: center;
+    border: 5px solid black;
+  }
+
+  h4{
+    text-align: center;
+    text-decoration-line: underline;
+  }
+
+  li{
+  margin-left: 160px;
   }
 
 aside{
   background-color: rgb(174, 182, 191 );
-  height: 100%;
+  height: 36vh;
   width: 20%;
   display: flex;
-  border-radius: 10%;
+  border: 3px solid white;
   flex-direction: column;
-}
-
-
-button{
-height: 8vh;
-width: 8vw;
-margin-left: 80px;
-margin-top: 90px;
-
-}
-
-.registrarse{
-text-align: center;
-font-size: 12px;
-color: blue;
-text-decoration: underline;
 }
 
 footer{
   width: 100%;
   height: 15vh;
   background-color: rgb(44, 62, 80);
+  border-radius: 10px;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -119,11 +187,11 @@ footer{
 .redes{
   margin-top: 25px;
   margin-right: 25px;
-
 }
 
 .faceig{
 
 height: 35px;
 width: 35px;
+border-radius: 30%;
 }
