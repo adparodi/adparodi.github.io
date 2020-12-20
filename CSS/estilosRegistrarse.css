@@ -1,9 +1,7 @@
 body{
   margin: 0%;
   padding: 0%;
-  display: flex;
-  flex-wrap: wrap;
-}
+  }
 
 *{
   box-sizing: border-box;
@@ -11,7 +9,6 @@ body{
 
 header{
   height: 20vh;
-  width: 100%;
   display: flex;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -21,6 +18,7 @@ header{
   width: 20%;
   height: 100%;
   display: flex;
+
 }
 
 .imglogo{
@@ -52,40 +50,64 @@ a{
 }
 
 main{
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-color: rgb(174, 182, 191);
   border-top: 3px solid white;
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 
 }
 
-.section1{
-  width: 100%;
-  height: 28vh;
-  padding: 20px;
+.for{
   display: flex;
-  }
-
-  p{
-    text-align: center;
-    font-weight: bolder;
-    font-size: large;
-    line-height: 25px;
-  }
-
-.section2{
-  width: 100%;
-  height: 100%;
-  display: flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
   justify-content: center;
 }
 
-.jcia{
-  width: 90%;
-  height: 80vh;
+label{
+  width: 18%;
+  height: 30px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+
 }
+
+input{
+  width: 20%;
+  height: 30px;
+  display: flex;
+/*VER VIDEO FORMULARIO PORQUE HABÍA QUE AGREGAR ALGO MAS HABIA ALGUNAS COSAS EN HTML QUE SE PONIAN IGUAL DENTRO DE LAS CARACTERISTICAS DE INNPUT Y LABEL*/
+}
+
+.boton{
+  width: 100%;
+  height: 100%;
+  border-left: 5px solid white;
+  padding: 10px;
+  
+  display: flex;
+  justify-content: center;
+
+}
+
+button{
+  height: 8vh;
+  width: 8vw;
+  border-radius: 10%;
+}
+
 
 footer{
   width: 100%;
@@ -99,11 +121,9 @@ footer{
 .redes{
   margin-top: 25px;
   margin-right: 25px;
-
 }
 
 .faceig{
-
 height: 35px;
 width: 35px;
 border-radius: 30%;
