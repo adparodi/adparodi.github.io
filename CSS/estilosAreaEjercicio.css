@@ -1,13 +1,16 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif; /*características de google fonts que se aplican a todo la pagina*/
+  font-family: 'Noto Serif', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
 body{
   margin: 0%;
   padding: 0%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-*{
-  box-sizing: border-box;
-}
+/*TAMAÑO CELULAR*/
 
 header{
   height: 20vh;
@@ -15,110 +18,112 @@ header{
   display: flex;
   margin-bottom: 5px;
   margin-top: 5px;
+  background-color: rgb(44, 62, 80);
 }
 
 .logo{
   width: 20%;
   height: 100%;
+  background-color: white;
   display: flex;
+  justify-content: center;
 }
 
-.imglogo{
-  padding-left: 10px;
-  width: 100%;
-  border-right: 10px solid white;
-  border-radius: 35px;
+.logo img{
+  width: 94%;
+  height: 100%;
+  border-radius: 10%;
 }
 
 nav{
-  width: 80%;
-  height: 100%;
-  background-color: rgb(44, 62, 80);
-  border-radius: 10px;
-  display: flex;
+  display: none;
 }
 
-.pestaña{
-  width: 33%;
+.titulo{
+  width: 60%;
   height: 100%;
-  margin: 4% 10%;
   display: flex;
+  justify-content: center;
 }
 
-a{
-  color: rgb(234, 237, 237);
-  font-weight: bolder;
-  text-decoration: none;
+h1{
+  color: white;
+  padding-top: 20px;
 }
+
+.hamburguesa{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hamburguesa i{
+  color: white;
+  font-size: 3em;
+  padding-top: 30px;
+ }
 
 main{
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color;
   width: 100%;
   background-color: rgb(174, 182, 191);
-  border-top: 3px solid white;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-
-.section2{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .AdE{
-width: 100%;
-display: flex;
-background-color: rgb(44, 62, 80);
-justify-content: center;
-
+  width: 100%;
+  height: 6vh;
+  background-color: rgb(44, 62, 80);
 
 }
-
-h3{
+.AdE h3{
+  text-align: center;
   color: white;
-  font-weight: bolder;
+}
 
+.reg{display:none;
+}
+
+.seccion4{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
 }
 
 .a_ej{
-  width: 50%;
+  width: 100%;
   height: 33%;
-  border-left: 3px solid  white;
-  border-bottom: 3px solid  white;
-  padding-top: 15px;
+  border-bottom: 3px solid white;
+  padding-top: 20px;
   padding-bottom: 5px;
   display: flex;
-  flex-direction: column;
 }
 
 .imagenes{
-  justify-content: center;
-  display: flex;
+  padding-left: 30px;
 }
 
 .img{
-  height: 150px;
-  width: 150px;
+  height: 220px;
+  width: 220px;
   border-radius: 30%;
-  justify-content: center;
   border: 5px solid black;
 }
 
-h4{
-  text-align: center;
-  text-decoration-line: underline;
+.tit_lista{
+  padding-left: 40px;
 }
 
-li{
-margin-left: 160px;
+.seccion4 h4{
+  text-decoration: underline;
 }
 
 footer{
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   background-color: rgb(44, 62, 80);
   border-radius: 10px;
   display: flex;
@@ -128,12 +133,87 @@ footer{
 .redes{
   margin-top: 25px;
   margin-right: 25px;
-
 }
 
 .faceig{
+  height: 35px;
+  width: 35px;
+  border-radius: 30%;
+}
 
-height: 35px;
-width: 35px;
-border-radius: 30%;
+/*TAMAÑO TABLET*/
+
+@media (min-width: 600px) {
+  .facet_sidebar {
+  display: none;
+  }
+
+  .titulo{
+    display: none;
+  }
+
+  header{
+    justify-content: space-between;
+  }
+
+  nav{
+    display: none;
+  }
+
+  /*TAMAÑO PC*/
+
+@media (min-width: 1080px) {
+  .hamburguesa{
+    display: none;
+  }
+
+  .titulo{
+    display: none;
+  }
+
+  nav{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: flex-end;
+    padding-top: 50px;
+  }
+
+  nav .pestaña{
+    width: 33%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .pest_a_ejer{
+    display: none;
+  }
+
+  nav .pestaña a{
+    text-decoration: none;
+    color:white;
+   }
+
+  .a_ej{
+    width: 50%;
+    margin: 0;
+    padding-bottom: 15px;
+    padding-right: 10px;
+  }
+
+  .img{
+    height: 180px;
+    width: 180px;
+    border-radius: 30%;
+    border: 5px solid black;
+  }
+
+  .imagenes{
+    padding-left: 10px;
+  }
+
+ .AdE{
+   width: 100%;
+   height: 8vh;
+ }
 }

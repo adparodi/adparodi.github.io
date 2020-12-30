@@ -1,56 +1,71 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif; /*características de google fonts que se aplican a todo la pagina*/
+  font-family: 'Noto Serif', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
 body{
   margin: 0%;
   padding: 0%;
 }
 
-*{
-  box-sizing: border-box;
-}
+/*TAMAÑO CELULAR*/
 
 header{
-  height: 20vh;
+  height: 15vh;
+  width: 100%;
   display: flex;
   margin-bottom: 5px;
   margin-top: 5px;
+  background-color: rgb(44, 62, 80);
 }
 
 .logo{
   width: 20%;
   height: 100%;
+  background-color: white;
   display: flex;
-
+  justify-content: center;
 }
 
-.imglogo{
-  padding-left: 10px;
-  width: 100%;
-  border-right: 10px solid white;
-  border-radius: 35px;
+.logo img{
+  width: 94%;
+  height: 100%;
+  border-radius: 10%;
 }
 
 nav{
-  width: 80%;
-  height: 100%;
-  background-color: rgb(44, 62, 80);
-  border-radius: 10px;
-  display: flex;
+  display: none;
 }
 
-.pestaña{
-  width: 33%;
+.titulo{
+  width: 60%;
   height: 100%;
-  margin: 4% 10%;
   display: flex;
+  justify-content: center;
 }
 
-a{
-  color: rgb(234, 237, 237);
-  font-weight: bolder;
-  text-decoration: none;
+h1{
+  color: white;
+  padding-top: 20px;
+}
+
+.hamburguesa{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hamburguesa i{
+  color: white;
+  font-size: 3em;
+  padding-top: 30px;
 }
 
 main{
-  height: 100%;
+  height: 60vh;
   width: 100%;
   background-color: rgb(174, 182, 191);
   border-top: 3px solid white;
@@ -68,7 +83,6 @@ main{
 h3{
   text-align: center;
   text-decoration: underline;
-
 }
 
 h4{
@@ -78,34 +92,28 @@ h4{
 .text{
 display: flex;
 justify-content: center;
-
 }
 
 textarea{
-  width: 50%;
-  height: 50vh;
+  width: 60%;
+  height: 20vh;
 }
 
 .butt{
+  padding-top: 15px;
   display: flex;
   justify-content: center;
   }
 
 button{
-height: 8vh;
-width: 8vw;
-
-}
-
-.cita{
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
+height: 3vh;
+width: 18vw;
+padding-bottom: 15px;
 }
 
 footer{
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   background-color: rgb(44, 62, 80);
   border-radius: 10px;
   display: flex;
@@ -115,12 +123,66 @@ footer{
 .redes{
   margin-top: 25px;
   margin-right: 25px;
-
 }
 
 .faceig{
+  height: 35px;
+  width: 35px;
+  border-radius: 30%;
+}
 
-height: 35px;
-width: 35px;
-border-radius: 30%;
+/*TAMAÑO TABLET*/
+
+@media (min-width: 600px) {
+  .facet_sidebar {
+  display: none;
+  }
+
+  .titulo{
+    display: none;
+  }
+
+  header{
+    justify-content: space-between;
+  }
+
+  nav{
+    display: none;
+  }
+ }
+  /*TAMAÑO PC*/
+
+@media (min-width: 1080px) {
+  .hamburguesa{
+    display: none;
+  }
+
+  .titulo{
+    display: none;
+  }
+
+  nav{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: flex-end;
+    padding-top: 50px;
+  }
+
+  nav .pestaña{
+    width: 33%;
+    height: 100%;
+    text-align: center;
+  }
+
+  nav .pestaña a{
+    text-decoration: none;
+    color:white;
+  }
+  button{
+  height: 6vh;
+  width: 8vw;
+
+  }
+
 }

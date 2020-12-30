@@ -13,7 +13,7 @@ body{
 /*TAMAÑO CELULAR*/
 
 header{
-  height: 15vh;
+  height: 20vh;
   width: 100%;
   display: flex;
   margin-bottom: 5px;
@@ -48,28 +48,25 @@ nav{
 
 h1{
   color: white;
-  padding-top: 20px;
+  align-self: center;
 }
 
 .hamburguesa{
   width: 20%;
   height: 100%;
   display: flex;
-  justify-content: center;
 }
 
 .hamburguesa i{
   color: white;
-  font-size: 3em;
-  padding-top: 30px;
+  font-size: 2em;
+  align-self: center;
 }
 
 main{
+  background-color: rgb(174, 182, 191);
   display: flex;
   flex-direction: column;
-  background-color;
-  width: 100%;
-  background-color: rgb(174, 182, 191);
 }
 
 .banner{
@@ -80,17 +77,12 @@ main{
   display: none;
 }
 
-/*.carouselEstudio {
-   display:none;
- }*/
-
 .seccion2{
   width: 100%;
-  height: 35vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .area_reg{
@@ -99,18 +91,15 @@ main{
 
 .seccion2 p{
   text-align: justify;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;   /*VER ACÁ PORQUE EL BANNER ME PISA EL AREA DE SECCION2*/
+  padding: 30px;
 }
 
 .titulo_Aejercicio{
   width: 100%;
   height: 6vh;
   background-color: rgb(44, 62, 80);
-
 }
+
 .titulo_Aejercicio h3{
   padding-top: 10px;
   text-align: center;
@@ -138,11 +127,12 @@ main{
 
 .imagenes{
   padding-left: 30px;
+  padding-bottom: 10px;
 }
 
 .img{
-  height: 220px;
-  width: 220px;
+  height: 180px;
+  width: 180px;
   border-radius: 30%;
   border: 5px solid black;
 }
@@ -157,7 +147,7 @@ main{
 
 footer{
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   background-color: rgb(44, 62, 80);
   border-radius: 10px;
   display: flex;
@@ -177,118 +167,128 @@ footer{
 
   /*TAMAÑO TABLET*/
 
-  @media (min-width: 600px) {
-    .facet_sidebar {
-    display: none;
-    }
+@media (min-width: 600px) {
+  .facet_sidebar {
+  display: none;
+  }
 
-    .titulo{
-      display: none;
-    }
+ .titulo{
+   display: none;
+ }
 
-    header{
-      justify-content: space-between;
-    }
+ header{
+   justify-content: space-between;
+  }
 
-    nav{
-      display: none;
-    }
+ nav{
+   display: none;
+  }
 
-    .banner{
-      display: flex;
-      width: 100%;
-      height: 50vh;
-      background-color: grey;
-    }
+.banner{
+   display: flex;
+   width: 100%;
+   height: 50vh;
+  }
 
-    .bannerimg{
-      width: 100%;
-      height: 100%;
-      border-bottom: 5px solid white;
-    }
+ .bannerimg{
+   width: 100%;
+   height: 100%;
+   border-bottom: 5px solid white;
+  }
 
-   .banner img{
-     width: 100%;
-     height: 100% ;
-    }
+ .banner img{
+  width: 100%;
+  height: 100% ;
+ }
 
-    .tituloBanner{
-      width: 100%;
-      z-index: 2;
-      position: absolute;
-      top:40%;
-      left: 40%;
-      display: block;
-    }
+ .tituloBanner{
+    width: 70%;
+    z-index: 2;
+    position: absolute;
+    top:50%;
+    left:45%;
+    display: block;
+  }
 
   .tituloBanner h1{
     color: black;
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .seccion2{
-    height: 15vh;
-    display: flex;
-    flex-direction: column;
+    height: 30vh;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-   }
+  }
 
   .seccion2 p{
-    width: 100%;
-    height: 100%;
-    padding-top: 30px;
-    padding: 30px;
-
+    padding-top: 50px;
   }
 
   .area_reg{
-    width: 30%;
+    width: 50%;
     height: 25vh;
     display: flex;
     flex-direction: column;
     align-self: center;
     background-color: rgb(44, 62, 80);
-    justify-content: flex-end;
     border: 5px solid white;
   }
 
   .reg{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 20%;
-    justify-content: center;
+ }
 
-   }
+ .usuario{
+   font-size: x-small;
+   display: flex;
+   flex-direction: column;
+ }
 
-   .reg label{
-     padding-bottom: 5px;
+  .reg label{
+    align-self: center;
+     padding-top: 10px;
      color: white;
-     padding-left: 30px;
-   }
+  }
 
+ .reg input{
+    width: 60%;
+    align-self: center;
+  }
 
   .butt{
-    display: flex;
-    padding-top: 20px;
-    padding-left: 60px;
+    align-self: center;
+    padding-top: 10px;
+ }
+
+ .butt button{
+   font-size: 10px;
+   font-weight: bold;
+ }
+
+
+ .registrarse{
+   font-size: x-small;
+   align-self: center;
+   padding-top: 10px;
+ }
+
+ .titulo_Aejercicio{
+   width: 100%;
+   height: 9vh;
+   margin-top: 15px;
+ }
+
+.imagenes{
+  padding-left: 100px;
 }
 
-.registrarse{
-  padding-left: 60px;
-  padding-top: 10px;
 }
 
-.titulo_Aejercicio{
-  margin-top: 20px;
-}
+  /*TAMAÑO PC*/
 
-}
-
-         /*TAMAÑO PC*/
-
-@media (min-width: 1080px) {
+@media (min-width: 1020px) {
   .hamburguesa{
     display: none;
   }
@@ -309,6 +309,7 @@ footer{
     width: 33%;
     height: 100%;
     text-align: center;
+    padding-top: 15px;
   }
 
   nav .pestaña a{
@@ -317,563 +318,28 @@ footer{
   }
 
   .banner{
-    display: flex;
     width: 100%;
     height: 70vh;
-    background-color: grey;
+  }
+
+  .tituloBanner{
+    top:60%;
+    left:50%;
+  }
+
+  .tituloBanner h1{
+    font-size: 3em;
   }
 
   .seccion2{
-    width: 100%;
-    height: 25vh;
-    display: flex;
+    height: 20vh;
   }
-
   .seccion2 p{
-    width: 80%;
-    height: 100%;
+    padding-top: 20px;
   }
 
   .area_reg{
-    /*width: 30%;*/
-    height: 40vh;
-
+    height: 25vh;
   }
-
-  .a_ej{
-    width: 50%;
-    margin: 0;
-    padding-bottom: 10px;
-    padding: 10px;
-  }
-
-  .img{
-    height: 180px;
-    width: 180px;
-    border-radius: 30%;
-    border: 5px solid black;
-  }
-  .imagenes{
-    padding-left: 10px;
-  }
-
- .titulo_Aejercicio{
-   width: 100%;
-   height: 8vh;
- }
-
-
-}
-
-/*@media (min-width: 1080px) {
-
- /*
-/*MAIN
-
-.banner{
-  width: 95%;
-  height: 80%;
-}
-
-.banner img{
-width:
-
-}
-.seccion2{
-  padding-top: 20px;
-  background-color: white;
-  display: flex;
-}
-.seccion2 p{
-  width: 60%;
-  height:100%;
-  background-color: pink;
-}
-
-.reg{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 20%;
-  background-color: red;
- }
-}
-
-/*.seccion2 h3{
-  width: 100%;
-  height: 30vh;
-  text-align: center;
-  background-color: rgb(44, 62, 80);
-  color: white;
-}
-
-
-.a_ej{
-  width: 50%;
-  margin: 0;
-  padding-bottom: 10px;
-
-}
-
-.img{
-  height: 180px;
-  width: 180px;
-  border-radius: 30%;
-  border: 5px solid black;
-}
-
-}
-  /*header{
-   height: 20vh;
-   width: 100%;
-   display: flex;
-   margin-bottom: 5px;
-   margin-top: 5px;
- }
-
- .logo{
-   width: 20%;
-   height: 100%;
-   display: flex;
- }
-
- .imglogo{
-   padding-left: 10px;
-   width: 100%;
-   height: 100%;
-   border-right: 10px solid white;
-   border-radius: 35px;
- }
-
- nav{
-   width: 80%;
-   height: 100%;
-   background-color: rgb(44, 62, 80);
-   border-radius: 10px;
-   display: flex;
- }
-
- .pestaña{
-   width: 33%;
-   height: 100%;
-   margin: 4% 10%;
-   display: flex;
- }
-
- a{
-   color: rgb(234, 237, 237);
-   font-weight: bolder;
-   text-decoration: none;
- }
-
-/*.carouselEstudio{
-  display: flex;
-  width: 100%;
-  height: 20vh;
-}
-
- .carousel-inner img {
-     width: 100%;
-     height: 450px;
- }
-
- .carousel-inner{
-  height: 450px;
- }
-}*/
-/*
-main{
-/*  height: 400vh;
-  width: 100%;
-  background-color: rgb(174, 182, 191);
-  border-top: 3px solid white;
-  display: flex;
-  flex-direction: column;
-  /*flex-wrap: wrap;
-}
-
-.banner{
-  display: none;
-}
-
-/*.carousel-inner{
-  height: 200px;
-}*/
-/*.carouselEstudio{
-  width: 100%;
-  height: 40vh;
-  display: block;
-}*/
-
-
-/*.seccion{
-width: 100%;
-border-bottom: 3px solid white;
-display: flex;
-}
-
-.seccion2{
-
-  width: 100%;
-  height: 20vh;
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  padding-top: 80px white;
-}
-
-.seccion2 p{
-  width: 70%;
-  color: black;
-  text-align: justify;
-  font-weight: bolder;
-  padding-top: 30px;
-  padding: 5% 5%;
-}
-
-
-.reg{
-    width: 20%;
-    height: 100%;
-    background-color: rgb(44, 62, 80);
-    border-left: 5px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.usycontras{
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 5px;
-}
-
-.labelImput{
-  color: white;
-}
-
-  button{
-  height: 8vh;
-  width: 8vw;
-}
-
-.registrarse{
-  font-size: 10px;
-  color: rgb(118, 215, 196);
-  text-decoration: underline;
-  padding-top: 5px;
-}
-
-.AdE{
-  width: 100%;
-  display: flex;
-  background-color: rgb(44, 62, 80);
-  justify-content: center;
-}
-
-h3{
-  color: white;
-  font-weight: bolder;
-}
-
-
-.section3{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.a_ej{
-  width: 50%;
-  height: 33%;
-  border-left: 3px solid  white;
-  border-bottom: 3px solid  white;
-  padding-top: 15px;
-  padding-bottom: 5px;
-  display: flex;
-  flex-direction: column;
-}
-
-.imagenes{
-  justify-content: center;
-  display: flex;
-}
-
-.img{
-  height: 150px;
-  width: 150px;
-  border-radius: 30%;
-  justify-content: center;
-  border: 5px solid black;
-}
-
-h4{
-  text-align: center;
-  text-decoration-line: underline;
-}
-
-ul{
-  display: flex;
-  flex-direction: column;
-}
-
-li{
-  margin-left: 150px;
- }
-
-}
-
-
-
-/*Diseño Responsive tamaño PC DE ACÁ EN ADELANTE ES COMO ESTABA AL PRINCIPIO ANTES DE ARRANCAR PRIMERO POR MOBILE FIRS*/
-/* header{
-  height: 20vh;
-  width: 100%;
-  display: flex;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.logo{
-  width: 20%;
-  height: 100%;
-  display: flex;
-}
-
-.imglogo{
-  padding-left: 10px;
-  width: 100%;
-  height: 100%;
-  border-right: 10px solid white;
-  border-radius: 35px;
-}
-
-nav{
-  width: 80%;
-  height: 100%;
-  background-color: rgb(44, 62, 80);
-  border-radius: 10px;
-  display: flex;
-}
-
-.pestaña{
-  width: 33%;
-  height: 100%;
-  margin: 4% 10%;
-  display: flex;
-}
-
-a{
-  color: rgb(234, 237, 237);
-  font-weight: bolder;
-  text-decoration: none;
-}
-
-.carousel-inner img {
-    width: 100%;
-    height: 450px;
-}
-
-.carousel-inner{
- height: 450px;
-}
-
-/*CONSULTAR CÓMO HACER PARA QUE IMAGEN DE SLIDERS NO QUEDE TAN ESTIRADA, CÓMO MODIFICARLAS*/
-
-/*
-
-footer{
-  width: 100%;
-  height: 25vh;
-  background-color: rgb(44, 62, 80);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.redes{
-  margin-top: 25px;
-  margin-right: 25px;
-}
-
-.faceig{
-  height: 35px;
-  width: 35px;
-  border-radius: 30%;
-}
-
-/*Diseño responsive*/
-
-/*@media (max-width: 700px) {
-
-  header{
-    height: 20vh;
-    width: 100%;
-    display: flex;
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-
-  .logo{
-    display: none;
-    /*width: 20%;
-    height: 100%;
-    display: flex;
-  }
-
-
-  /*nav{
-    width: 100%;
-    height: 100%;
-    /*background-color: rgb(44, 62, 80);
-    border-radius: 10px;
-    display: flex;
-  }
-
-/*  .pestaña{
-    width: 33%;
-    height: 100%;
-    margin: 4% 10%;
-    display: flex;
-  }
-
-  a{
-    color: rgb(234, 237, 237);
-    font-weight: bolder;
-    text-decoration: none;
-  }*/
-
-  /*.carousel-inner img {
-      width: 100%;
-      height: 450px;
-  }
-
-  .carousel-inner{
-   height: 450px;
-  }
-
-  /*CONSULTAR CÓMO HACER PARA QUE IMAGEN DE SLIDERS NO QUEDE TAN ESTIRADA, CÓMO MODIFICARLAS*/
-
-  /*main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /*flex-wrap: wrap;
-  }
-
-  /*.seccion{
-  width: 100%;
-  height: 50vh;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 10px;
-  }
-
-  p{
-    width: 100%;
-      }
-
-  .reg{
-    width: 80%;
-    height: 300px;
-    border: 5px solid white;
-   }
-
-  .usycontras{
-    display: flex;
-    /*padding-bottom: 5px;
-  }
-
-  /*.labelImput{
-    color: white;
-  }*/
-
-    /*button{
-    height: 4vh;
-    width: 17vw;
-    }
-
-    /*.registrarse{
-    font-size: 10px;
-    color: rgb(118, 215, 196);
-    text-decoration: underline;
-    padding-top: 5px;
-    }*/
-
-
-  /*.AdE{
-    width: 100%;
-    /*display: flex;
-    justify-content: center;
-  }
-
-
-    .a_ej{
-      width: 100%;
-      /*height: 33%;
-      border-left: 3px solid  white;
-      border-bottom: 3px solid  white;
-      padding-top: 15px;
-      padding-bottom: 5px;
-      display: flex;
-      flex-direction: column;
-    }
-
-  /*  .imagenes{
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .img{
-      height: 250px;
-      width: 50%;
-    }
-
-    /*ul{
-      display: flex;
-      flex-direction: column;
-    }
-
-  li{
-    margin-left: 75px;
-    }
-
-/*OJO HE MODIFICADO EXITOSAMENTE HASTA ACÁ*/
-
-
-
-  /*aside{
-    background-color: rgb(174, 182, 191 );
-    height: 36vh;
-    width: 100%;
-    /*display: flex;
-    border: 3px solid white;
-    flex-direction: column;
-  }*/
-
-/*  footer{
-    width: 100%;
-    height: 15vh;
-    background-color: rgb(44, 62, 80);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .redes{
-    margin-top: 25px;
-    margin-right: 25px;
-  }
-
-  .faceig{
-
-  height: 35px;
-  width: 35px;
-  border-radius: 30%;
-  }
-
 
 }
