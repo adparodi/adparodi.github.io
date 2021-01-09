@@ -167,7 +167,7 @@ footer{
 
   /*TAMAÑO TABLET*/
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .facet_sidebar {
   display: none;
   }
