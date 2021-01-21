@@ -13,26 +13,18 @@ body{
 /*TAMAÑO CELULAR*/
 
 header{
-  height: 20vh;
+  height: 30vh;
   width: 100%;
   display: flex;
   margin-bottom: 5px;
   margin-top: 5px;
-  background-color: rgb(44, 62, 80);
-}
+  background-image: url("../imagenes/martillo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
 
 .logo{
-  width: 20%;
-  height: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-}
-
-.logo img{
-  width: 94%;
-  height: 100%;
-  border-radius: 10%;
+  display: none;
 }
 
 nav{
@@ -43,11 +35,11 @@ nav{
   width: 60%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  margin-left: 100px;
 }
 
 h1{
-  color: white;
+  color: rgb(39, 55, 70);
   align-self: center;
 }
 
@@ -55,6 +47,7 @@ h1{
   width: 20%;
   height: 100%;
   display: flex;
+  justify-content: flex-end;
 }
 
 .hamburguesa i{
@@ -64,12 +57,10 @@ h1{
 }
 
 main{
-  background-color: rgb(174, 182, 191);
-  display: flex;
-  flex-direction: column;
+  background-color: rgb(100, 30, 22,0.7);
 }
 
-.banner{
+main .banner{
   display: none;
 }
 
@@ -85,35 +76,32 @@ main{
   justify-content: center;
 }
 
+.seccion2 p{
+  text-align: justify;
+  padding: 30px;
+  color: rgb(212, 172, 13);
+}
+
 .area_reg{
   display: none;
 }
 
-.seccion2 p{
-  text-align: justify;
-  padding: 30px;
-}
-
 .titulo_Aejercicio{
   width: 100%;
-  height: 6vh;
-  background-color: rgb(44, 62, 80);
+  height: 15vh;
+  background-image:url("../imagenes/madera.jpg");
 }
 
 .titulo_Aejercicio h3{
-  padding-top: 10px;
+ padding-top: 20px;
   text-align: center;
   color: white;
-}
-
-.reg{display:none;
 }
 
 .seccion4{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  align-items: center;
 }
 
 .a_ej{
@@ -123,32 +111,39 @@ main{
   padding-top: 20px;
   padding-bottom: 5px;
   display: flex;
+  /*background-color: rgb(100, 30, 22,0.7);*/
 }
 
 .imagenes{
-  padding-left: 30px;
+  padding-left: 80px;
   padding-bottom: 10px;
+  /*align-self: center;*/
 }
 
-.img{
-  height: 180px;
-  width: 180px;
+ .img{
+  height: 150px;
+  width: 150px;
   border-radius: 30%;
   border: 5px solid black;
 }
 
-.tit_lista{
+ .tit_lista{
   padding-left: 40px;
 }
 
 .seccion4 h4{
   text-decoration: underline;
+  color: white;
+}
+
+.seccion4 li{
+  color: rgb(212, 172, 13);
 }
 
 footer{
   width: 100%;
   height: 15vh;
-  background-color: rgb(44, 62, 80);
+  background-image:url("../imagenes/madera.jpg");
   border-radius: 10px;
   display: flex;
   flex-direction: row-reverse;
@@ -163,51 +158,62 @@ footer{
   height: 35px;
   width: 35px;
   border-radius: 30%;
-}
+ }
 
   /*TAMAÑO TABLET*/
 
 @media (min-width: 768px) {
-  .facet_sidebar {
-  display: none;
-  }
 
- .titulo{
+  header {
+    height: 20vh;
+    justify-content: flex-end;
+  }
+  header .titulo {
    display: none;
  }
 
- header{
-   justify-content: space-between;
+ header .hamburguesa{
+   justify-content: flex-start;
+ }
+
+  .logo{
+    display: none;
   }
 
- nav{
+  nav{
    display: none;
   }
 
-.banner{
-   display: flex;
-   width: 100%;
-   height: 50vh;
+  main {
+   background-color: rgb(100, 30, 22,0.7);
   }
 
- .bannerimg{
-   width: 100%;
-   height: 100%;
-   border-bottom: 5px solid white;
+  main .banner{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    padding-top: 20px;
   }
 
- .banner img{
-  width: 100%;
-  height: 100% ;
- }
+  .bannerimg{
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid white;
+  }
+
+  .banner img{
+    width: 100%;
+    height: 100% ;
+  }
 
  .tituloBanner{
-    width: 70%;
-    z-index: 2;
-    position: absolute;
-    top:50%;
-    left:45%;
-    display: block;
+   width: 70%;
+   z-index: 2;
+   position: absolute;
+   top:45%;
+   left:6%;
+   font-size: 20px;
+   display: block;
   }
 
   .tituloBanner h1{
@@ -216,23 +222,19 @@ footer{
   }
 
   .seccion2{
-    height: 30vh;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .seccion2 p{
-    padding-top: 50px;
+    height: 27vh;
   }
 
   .area_reg{
+    margin-top: 15px;
+    margin-bottom: 15PX;
     width: 50%;
-    height: 25vh;
+    height: 31vh;
     display: flex;
     flex-direction: column;
-    align-self: center;
-    background-color: rgb(44, 62, 80);
     border: 5px solid white;
+    background-color: rgb(100, 30, 22);
+    margin-left: 240px; /*lo centré de esta manera porque no pude hacerlo diferente*/
   }
 
   .reg{
@@ -267,28 +269,21 @@ footer{
    font-weight: bold;
  }
 
-
  .registrarse{
    font-size: x-small;
    align-self: center;
    padding-top: 10px;
  }
 
- .titulo_Aejercicio{
-   width: 100%;
-   height: 9vh;
-   margin-top: 15px;
+  .img{
+   height: 220px;
+   width: 220px;
  }
-
-.imagenes{
-  padding-left: 100px;
 }
 
-}
+  /*TAMAÑO PC*/ /*****falta terminar de definir tamaño pc incorporando carrousel*/
 
-  /*TAMAÑO PC*/
-
-@media (min-width: 1020px) {
+/*@media (min-width: 1020px) {
   .hamburguesa{
     display: none;
   }
@@ -340,7 +335,6 @@ footer{
 
   .area_reg{
     height: 30vh;
-    width: 30%;
   }
 
 }
