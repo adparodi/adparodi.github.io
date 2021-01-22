@@ -348,4 +348,39 @@ footer{
   .area_reg{
     margin-left: 280px; /*lo centré de esta manera porque no pude hacerlo diferente*/
   }
+
+
+
+
+.seccion4{
+ justify-content: center;
+}
+
+  .a_ej{
+    width: 48%;
+    height: 32vh;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+  }
+
+  .imagenes{
+    padding-left: 10px;
+    align-self: center;
+  }
+
+  .img{
+   height: 130px;
+   width: 130px;
+
+ }
+
+
+
+
+
+  .tit_lista{
+   padding-left: 40px;
+  }
+
 }
