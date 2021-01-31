@@ -35,12 +35,12 @@ nav{
   width: 60%;
   height: 100%;
   display: flex;
-  margin-left: 100px;
+  margin-left: 20px;
+  margin-top: 45px;
 }
 
 h1{
   color: rgb(39, 55, 70);
-  align-self: center;
 }
 
 .hamburguesa{
@@ -74,7 +74,7 @@ main .banner{
 
 .seccion2{
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,12 +92,12 @@ main .banner{
 
 .titulo_Aejercicio{
   width: 100%;
-  height: 15vh;
+  height: 9vh;
   background-image:url("../imagenes/madera.jpg");
 }
 
 .titulo_Aejercicio h3{
- padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
   color: white;
 }
@@ -118,19 +118,7 @@ main .banner{
 }
 
 .imagenes{
-  padding-left: 80px;
-  padding-bottom: 10px;
-}
-
- .img{
-  height: 150px;
-  width: 150px;
-  border-radius: 30%;
-  border: 5px solid black;
-}
-
- .tit_lista{
-  padding-left: 40px;
+  display: none;
 }
 
 .seccion4 h4{
@@ -170,6 +158,7 @@ footer{
     height: 20vh;
     justify-content: flex-end;
   }
+
   header .titulo {
    display: none;
  }
@@ -281,15 +270,49 @@ footer{
    padding-top: 10px;
  }
 
+
+ .imagenes{
+   display: flex;
+   padding-left: 20px;
+   align-self: center;
+ }
+ 
   .img{
-   height: 220px;
-   width: 220px;
+   height: 120px;
+   width: 120px;
+   border-radius: 30%;
+   border: 5px solid black;
+ }
+
+  .tit_lista{
+   padding-left: 40px;
  }
 }
 
   /*TAMAÑO PC*/
 
 @media (min-width: 1020px) {
+
+
+/*MODIFICAR LOS OTROS HTML AL NUEVO FORMATO Y COLORES*/
+/*VOLVER A PONER FOTO JUSTICIA QUE BORRE PORQUES ES PARA EL HTML QUIENES SOMOS*/
+
+  header .logo{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .logo img{
+    width: 60%;
+    height: 90%;
+    border-radius: 20%;
+    opacity: 0.6;
+
+  }
+
   .hamburguesa{
     display: none;
   }
@@ -304,7 +327,7 @@ footer{
     height: 100%;
     justify-content: flex-end;
     padding-top: 50px;
-  }
+   }
 
   nav .pestaña{
     width: 33%;
@@ -349,19 +372,15 @@ footer{
     margin-left: 280px; /*lo centré de esta manera porque no pude hacerlo diferente*/
   }
 
-
-
-
-.seccion4{
- justify-content: center;
-}
+ .seccion4{
+  justify-content: center;
+ }
 
   .a_ej{
     width: 48%;
     height: 32vh;
     padding-top: 10px;
     padding-bottom: 5px;
-
   }
 
   .imagenes{
@@ -370,17 +389,11 @@ footer{
   }
 
   .img{
-   height: 130px;
-   width: 130px;
-
+    height: 130px;
+    width: 130px;
  }
-
-
-
-
 
   .tit_lista{
    padding-left: 40px;
   }
-
 }
