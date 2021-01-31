@@ -36,7 +36,7 @@ nav{
   height: 100%;
   display: flex;
   margin-left: 20px;
-  margin-top: 45px;
+  margin-top: 15px;
 }
 
 h1{
@@ -119,6 +119,10 @@ main .banner{
 
 .imagenes{
   display: none;
+}
+
+.tit_lista{
+ padding-left: 10px;
 }
 
 .seccion4 h4{
@@ -276,7 +280,7 @@ footer{
    padding-left: 20px;
    align-self: center;
  }
- 
+
   .img{
    height: 120px;
    width: 120px;
