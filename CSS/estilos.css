@@ -40,7 +40,7 @@ nav{
 }
 
 h1{
-  color: rgb(39, 55, 70);
+  color: white; /*rgb(39, 55, 70);*/
 }
 
 .hamburguesa{
@@ -122,7 +122,7 @@ main .banner{
 }
 
 .tit_lista{
- padding-left: 10px;
+ padding-left: 20px;
 }
 
 .seccion4 h4{
