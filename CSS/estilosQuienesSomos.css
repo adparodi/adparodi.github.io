@@ -13,150 +13,154 @@ body{
 /*TAMAÑO CELULAR*/
 
 header{
-  height: 20vh;
-  width: 100%;
-  display: flex;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  background-color: rgb(44, 62, 80);
+ height: 30vh;
+ width: 100%;
+ display: flex;
+ margin-bottom: 5px;
+ margin-top: 5px;
+ background-image: url("../imagenes/martillo.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
 }
 
 .logo{
-  width: 20%;
-  height: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-}
-
-.logo img{
-  width: 94%;
-  height: 100%;
-  border-radius: 10%;
+ display: none;
 }
 
 nav{
-  display: none;
+display: none;
 }
 
 .titulo{
   width: 60%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+ height: 100%;
+ display: flex;
+ margin-left: 20px;
+ margin-top: 15px;
 }
 
 h1{
-  color: white;
-  padding-top: 20px;
+color: white;
 }
 
 .hamburguesa{
-  width: 20%;
-  height: 100%;
+ width: 20%;
+ height: 100%;
   display: flex;
-  justify-content: center;
+ justify-content: flex-end;
 }
 
 .hamburguesa i{
   color: white;
-  font-size: 3em;
-  padding-top: 30px;
+  font-size: 2em;
+ align-self: center;
 }
 
 main{
-  width: 100%;
-  height: 90vh;
-  background-color: rgb(174, 182, 191);
-  border-top: 3px solid white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ background-color: rgb(100, 30, 22,0.7);
+ height: 100vh;
+ width: 100%;
 }
 
 .section1{
   width: 100%;
-  height: 45vh;
+  height: 60vh;
   padding: 30px;
   display: flex;
-  }
-
-  p{
-    text-align: justify;
-    font-weight: bolder;
-    font-size: large;
-    line-height: 20px;
-    padding-top: 14px;
-  }
-
-.section2{
-  width: 80%;
-  height: 40vh;
-  display: flex;
-  padding-bottom: 20px;
 }
 
-.section2 img{
-  width: 100%;
-  height: 100%;
-  align-items: center;
+p{
+ text-align: justify;
+ font-weight: bolder;
+ font-size: large;
+ line-height: 20px;
+ padding-top: 14px;
+}
+
+.section2{
+ width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
 }
 
 footer{
-  width: 100%;
-  height: 15vh;
-  background-color: rgb(44, 62, 80);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row-reverse;
+ width: 100%;
+ height: 15vh;
+ background-image:url("../imagenes/madera.jpg");
+ border-radius: 10px;
+ display: flex;
+ flex-direction: row-reverse;
 }
 
 .redes{
   margin-top: 25px;
-  margin-right: 25px;
+ margin-right: 25px;
 }
 
 .faceig{
-
-height: 35px;
-width: 35px;
-border-radius: 30%;
+  height: 35px;
+ width: 35px;
+ border-radius: 30%;
 }
 
 /*TAMAÑO TABLET*/
 
-@media (min-width: 600px) {
-  .facet_sidebar {
-  display: none;
+@media (min-width: 768px) {
+
+  header {
+    height: 20vh;
+    justify-content: flex-end;
   }
 
-  .titulo{
+  header .hamburguesa{
+   justify-content: flex-start;
+  }
+
+  .logo{
     display: none;
-  }
-
-  header{
-    justify-content: space-between;
   }
 
   nav{
-    display: none;
+   display: none;
   }
 
   .section1{
-    height: 35vh;
-    }
-
-  .section2{
-    width: 80%;
+    width: 100%;
     height: 50vh;
+    padding: 30px;
     display: flex;
-    padding-bottom: 20px;
   }
 
- }
+  .section2{
+    height: 50vh;
+  }
+
+  img{
+    height: 100%;
+    width: 70%;
+  }
+}
+
   /*TAMAÑO PC*/
 
-@media (min-width: 1080px) {
+  @media (min-width: 1020px) {
+
+  header .logo{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .logo img{
+    width: 60%;
+    height: 90%;
+    border-radius: 20%;
+    opacity: 0.6;
+  }
+
   .hamburguesa{
     display: none;
   }
@@ -171,48 +175,17 @@ border-radius: 30%;
     height: 100%;
     justify-content: flex-end;
     padding-top: 50px;
-  }
+   }
 
   nav .pestaña{
     width: 33%;
     height: 100%;
     text-align: center;
+    padding-top: 15px;
   }
 
   nav .pestaña a{
     text-decoration: none;
     color:white;
   }
-
-  .pestaña_qS{
-    display:none;
-  }
-
-  .section1{
-    width: 100%;
-    height: 25vh;
-    padding: 20px;
-    display: flex;
-    }
-
-    p{
-      text-align: justify;
-      font-weight: bolder;
-      font-size: large;
-      line-height: 14px;
-      padding-top: 14px;
-    }
-
-  .section2{
-    width: 80%;
-    height: 60vh;
-    display: flex;
-  }
-
-  .section2 img{
-    width: 100%;
-    height: 100%;
-    align-items: center;
-  }
-
 }

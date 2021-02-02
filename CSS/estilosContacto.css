@@ -18,63 +18,65 @@ body{
 }
 
 header{
-  height:20vh;
+  height: 30vh;
   width: 100%;
   display: flex;
   margin-bottom: 5px;
   margin-top: 5px;
-  background-color: rgb(44, 62, 80);
-}
+  background-image: url("../imagenes/martillo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
 
 .logo{
-  width: 20%;
-  height: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  }
-
-.logo img{
-  width: 96%;
-  height: 100%;
-  border-radius: 10%;
+  display: none;
 }
 
 nav{
   display: none;
 }
 
-
 .titulo{
   width: 60%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  margin-left: 20px;
+  margin-top: 15px;
 }
 
 h1{
   color: white;
-  padding-top: 10px;
 }
 
 .hamburguesa{
   width: 20%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .hamburguesa i{
   color: white;
-  font-size: 3em;
-  padding-top: 30px;
+  font-size: 2em;
+  align-self: center;
 }
 
 main{
-  background-color: rgb(174, 182, 191);
-  display: flex;
-  flex-direction: column;
+  background-color: rgb(100, 30, 22,0.7);
 }
+
+main .banner{
+   display: none;
+ }
+
+ .tituloBanner{
+   display: none;
+ }
+
+ .carousel{
+   display: none;
+ }
+
 
 h2{
   text-align: center;
@@ -110,7 +112,7 @@ border-radius: 30%;
 footer{
   width: 100%;
   height: 15vh;
-  background-color: rgb(44, 62, 80);
+  background-image:url("../imagenes/madera.jpg");
   border-radius: 10px;
   display: flex;
   flex-direction: row-reverse;
@@ -122,59 +124,82 @@ footer{
 }
 
 .faceig{
-
-height: 35px;
-width: 35px;
-border-radius: 30%;
-}
+  height: 35px;
+  width: 35px;
+  border-radius: 30%;
+ }
 
 /*TAMAÑO TABLET*/
 
-@media (min-width: 600px) {
-  .facet_sidebar {
+/*TAMAÑO TABLET*/
+
+@media (min-width: 768px) {
+
+ header {
+  height: 20vh;
+   justify-content: flex-end;
+ }
+
+ /*header .titulo {
   display: none;
+ }*/
+
+ header .hamburguesa{
+  justify-content: flex-start;
+ }
+
+ .logo{
+  display: none;
+ }
+
+ nav{
+  display: none;
+ }
+}
+
+/*TAMAÑO PC*/
+@media (min-width: 1020px) {
+
+  header .logo{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .logo img{
+    width: 60%;
+    height: 90%;
+    border-radius: 20%;
+    opacity: 0.6;
+  }
+
+  .hamburguesa{
+    display: none;
   }
 
   .titulo{
     display: none;
   }
 
-  header{
-    justify-content: space-between;
-  }
-
   nav{
-    display: none;
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: flex-end;
+    padding-top: 50px;
+   }
+
+  nav .pestaña{
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
   }
-}
 
-/*TAMAÑO PC*/
-
-@media (min-width: 1080px) {
-.hamburguesa{
-  display: none;
- }
-
- .titulo{
-   display: none;
- }
-
- nav{
-   display: flex;
-   width: 70%;
-   height: 100%;
-   justify-content: flex-end;
-   padding-top: 50px;
- }
-
- nav .pestaña{
-   width: 33%;
-   height: 100%;
-   text-align: center;
- }
-
- nav .pestaña a{
-   text-decoration: none;
-   color:white;
- }
+  nav .pestaña a{
+    text-decoration: none;
+    color:white;
+  }
 }

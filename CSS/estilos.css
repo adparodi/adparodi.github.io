@@ -40,7 +40,7 @@ nav{
 }
 
 h1{
-  color: white; /*rgb(39, 55, 70);*/
+  color: white;
 }
 
 .hamburguesa{
@@ -274,7 +274,6 @@ footer{
    padding-top: 10px;
  }
 
-
  .imagenes{
    display: flex;
    padding-left: 20px;
@@ -297,10 +296,6 @@ footer{
 
 @media (min-width: 1020px) {
 
-
-/*MODIFICAR LOS OTROS HTML AL NUEVO FORMATO Y COLORES*/
-/*VOLVER A PONER FOTO JUSTICIA QUE BORRE PORQUES ES PARA EL HTML QUIENES SOMOS*/
-
   header .logo{
     display: flex;
     width: 30%;
@@ -314,7 +309,6 @@ footer{
     height: 90%;
     border-radius: 20%;
     opacity: 0.6;
-
   }
 
   .hamburguesa{
