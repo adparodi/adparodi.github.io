@@ -27,8 +27,8 @@ header{
   display: none;
 }
 
-nav{
-  display: none;
+.container-fluid{
+  padding-top: 40px;
 }
 
 .titulo{
@@ -41,19 +41,6 @@ nav{
 
 h1{
   color: white;
-}
-
-.hamburguesa{
-  width: 20%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hamburguesa i{
-  color: white;
-  font-size: 2em;
-  align-self: center;
 }
 
 main{
@@ -161,26 +148,15 @@ footer{
   header {
     height: 20vh;
     justify-content: flex-end;
+    padding-right: 90px;
   }
 
   header .titulo {
    display: none;
  }
 
- header .hamburguesa{
-   justify-content: flex-start;
- }
-
   .logo{
     display: none;
-  }
-
-  nav{
-   display: none;
-  }
-
-  main {
-   background-color: rgb(100, 30, 22,0.7);
   }
 
   main .banner{
@@ -296,12 +272,17 @@ footer{
 
 @media (min-width: 1020px) {
 
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+
   header .logo{
     display: flex;
     width: 30%;
     height: 100%;
-    padding-left: 10px;
     padding-top: 10px;
+    padding-left: 10px;
   }
 
   .logo img{
@@ -311,32 +292,8 @@ footer{
     opacity: 0.6;
   }
 
-  .hamburguesa{
-    display: none;
-  }
-
   .titulo{
     display: none;
-  }
-
-  nav{
-    display: flex;
-    width: 70%;
-    height: 100%;
-    justify-content: flex-end;
-    padding-top: 50px;
-   }
-
-  nav .pestaña{
-    width: 33%;
-    height: 100%;
-    text-align: center;
-    padding-top: 15px;
-  }
-
-  nav .pestaña a{
-    text-decoration: none;
-    color:white;
   }
 
   main .banner{

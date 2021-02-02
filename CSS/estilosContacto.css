@@ -5,17 +5,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/*TAMAÑO CELULAR*/
-
-
 body{
   margin: 0%;
   padding: 0%;
 }
 
-*{
-  box-sizing: border-box;
-}
+/*TAMAÑO CELULAR*/
 
 header{
   height: 30vh;
@@ -32,8 +27,8 @@ header{
   display: none;
 }
 
-nav{
-  display: none;
+.container-fluid{
+  padding-top: 40px;
 }
 
 .titulo{
@@ -48,65 +43,32 @@ h1{
   color: white;
 }
 
-.hamburguesa{
-  width: 20%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hamburguesa i{
-  color: white;
-  font-size: 2em;
-  align-self: center;
-}
-
 main{
   background-color: rgb(100, 30, 22,0.7);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-main .banner{
-   display: none;
- }
-
- .tituloBanner{
-   display: none;
- }
-
- .carousel{
-   display: none;
- }
-
-
-h2{
-  text-align: center;
-}
-p{
-  font-weight: bolder;
-  text-align: center;
-}
-
-address{
-  font-weight: bolder;
-  text-align: center;
+.section{
+  height: 40vh;
+  width: 100%;
+  display: flex;
 }
 
 .seccion2{
+  height: 60vh;
+  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 30px;
 }
 
-.redes{
-  margin-top: 25px;
-  margin-right: 25px;
-}
-
-.faceig{
-
-height: 35px;
-width: 35px;
-border-radius: 30%;
+iframe{
+  height: 90%;
+  width: 60%;
 }
 
 footer{
@@ -127,45 +89,42 @@ footer{
   height: 35px;
   width: 35px;
   border-radius: 30%;
- }
+}
 
-/*TAMAÑO TABLET*/
 
 /*TAMAÑO TABLET*/
 
 @media (min-width: 768px) {
 
- header {
-  height: 20vh;
-   justify-content: flex-end;
+  header {
+    height: 20vh;
+    justify-content: flex-end;
+    padding-right: 90px;
+  }
+
+  header .titulo {
+   display: none;
  }
 
- /*header .titulo {
-  display: none;
- }*/
-
- header .hamburguesa{
-  justify-content: flex-start;
- }
-
- .logo{
-  display: none;
- }
-
- nav{
-  display: none;
- }
+  .logo{
+    display: none;
+  }
 }
 
 /*TAMAÑO PC*/
 @media (min-width: 1020px) {
 
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+
   header .logo{
     display: flex;
     width: 30%;
     height: 100%;
-    padding-left: 10px;
     padding-top: 10px;
+    padding-left: 10px;
   }
 
   .logo img{
@@ -175,31 +134,7 @@ footer{
     opacity: 0.6;
   }
 
-  .hamburguesa{
-    display: none;
-  }
-
   .titulo{
     display: none;
-  }
-
-  nav{
-    display: flex;
-    width: 70%;
-    height: 100%;
-    justify-content: flex-end;
-    padding-top: 50px;
-   }
-
-  nav .pestaña{
-    width: 33%;
-    height: 100%;
-    text-align: center;
-    padding-top: 15px;
-  }
-
-  nav .pestaña a{
-    text-decoration: none;
-    color:white;
   }
 }

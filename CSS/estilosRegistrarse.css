@@ -27,8 +27,8 @@ header{
   display: none;
 }
 
-nav{
-  display: none;
+.container-fluid{
+  padding-top: 40px;
 }
 
 .titulo{
@@ -41,19 +41,6 @@ nav{
 
 h1{
   color: white;
-}
-
-.hamburguesa{
-  width: 20%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hamburguesa i{
-  color: white;
-  font-size: 2em;
-  align-self: center;
 }
 
 main{
@@ -136,19 +123,17 @@ footer{
   header {
     height: 20vh;
     justify-content: flex-end;
+    padding-right: 90px;
   }
 
- header .hamburguesa{
-   justify-content: flex-start;
+  header .titulo {
+   display: none;
  }
 
   .logo{
     display: none;
   }
 
-  nav{
-   display: none;
-  }
 
   form{
     padding-top: 55px;
@@ -173,48 +158,29 @@ footer{
 
   @media (min-width: 1020px) {
 
-  header .logo{
-    display: flex;
-    width: 30%;
-    height: 100%;
-    padding-left: 10px;
-    padding-top: 10px;
-  }
+    header{
+      display: flex;
+      justify-content: space-between;
+    }
 
-  .logo img{
-    width: 60%;
-    height: 90%;
-    border-radius: 20%;
-    opacity: 0.6;
-  }
+    header .logo{
+      display: flex;
+      width: 30%;
+      height: 100%;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
 
-  .hamburguesa{
-    display: none;
-  }
+    .logo img{
+      width: 60%;
+      height: 90%;
+      border-radius: 20%;
+      opacity: 0.6;
+    }
 
-  .titulo{
-    display: none;
-  }
-
-  nav{
-    display: flex;
-    width: 70%;
-    height: 100%;
-    justify-content: flex-end;
-    padding-top: 50px;
-   }
-
-  nav .pestaña{
-    width: 33%;
-    height: 100%;
-    text-align: center;
-    padding-top: 15px;
-  }
-
-  nav .pestaña a{
-    text-decoration: none;
-    color:white;
-  }
+    .titulo{
+      display: none;
+    }
 
   button{
     height: 6vh;

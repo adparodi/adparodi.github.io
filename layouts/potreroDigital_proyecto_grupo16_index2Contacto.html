@@ -1,43 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <script src="https://kit.fontawesome.com/61bad358c3.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="../css/estilosContacto.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;1,500&family=Noto+Serif:wght@700&family=Poppins&display=swap" rel="stylesheet">
-    <title>contacto</title>
+      <meta charset="utf-8">
+      <script src="https://kit.fontawesome.com/61bad358c3.js" crossorigin="anonymous"></script> <!--Etiqueta para icono menú hamburguesa-->
+      <meta name="viewport" content="width=device-width, user-scalable=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://kit.fontawesome.com/61bad358c3.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      <link rel="stylesheet" href="../CSS/estilosContacto.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com"> <!--links para google fonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,600;1,500&family=Noto+Serif:wght@700&family=Poppins&display=swap" rel="stylesheet">
+      <title>Estudio_Parodi</title>
   </head>
 
   <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
     <header>
-      <div class="logo">
-        <a href="../layouts/index.html">
+       <div class="logo">
           <img src="../imagenes/logo2.png" alt="logo">
-        </a>
-      </div>
+       </div>
 
-      <div class="titulo">
-        <h1>Estudio Parodi</h1>
-      </div>
+       <div class="titulo">
+         <h1>Estudio Parodi</h1>
+       </div>
 
-      <div class="hamburguesa">
-       <i class="fas fa-bars"></i>
+      <div class="navegacion">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+             <a class="navbar-brand" href="#"></a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                   <a class="nav-link active text-white" aria-current="page" href="potreroDigital_proyecto_grupo16_index3_AreasDeEjercicio.html">Áreas de Ejercicio</a>
+                  </li>
+                  <li class="nav-item">
+                   <a class="nav-link active text-white" aria-current="page" href="potreroDigital_proyecto_grupo16_index3_QuienesSomos.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="potreroDigital_proyecto_grupo16_index2Contacto.html">Contacto</a>
+                  </li>
+               </ul>
+             </div>
+         </div>
+       </nav>
       </div>
-
-      <nav>
-        <div class="pestaña" >
-          <a  href="../layouts/potreroDigital_proyecto_grupo16_index3_AreasDeEjercicio.html"> Áreas de ejercicio </a>
-        </div>
-        <div class="pestaña">
-          <a href="../layouts/potreroDigital_proyecto_grupo16_index3_QuienesSomos.html">Quienes Somos</a>
-        </div>
-        <div class="pestaña">
-          <a href="../layouts/potreroDigital_proyecto_grupo16_index2Contacto.html">Contacto</a>
-        </div>
-     </nav>
-   </header>
+    </header>
 
     <main>
       <section>
@@ -45,13 +61,12 @@
         <address class="direccion de contacto">
           Teléfonos: (261)6071340 - (261)5674155
           <br>
-          <br>
           Dirección: Cadetes Chilenos N° 264, Ciudad, Mendoza
         </address>
       </section>
 
       <section class="seccion2">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.172855588378!2d-68.83890858525676!3d-32.86714567519727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08e9b3f8851b%3A0xe1a7aa551b9a9945!2sCadetes%20Chilenos%20264%2C%20M5500GHC%20Mendoza!5e0!3m2!1ses-419!2sar!4v1607954327350!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.819885426555!2d-68.81033108525548!3d-32.90293007700566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eb37931c86b%3A0x740027309c7af90a!2sCadetes%20Chilenos%20264%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1612278684430!5m2!1ses-419!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
 
@@ -67,6 +82,5 @@
         </a>
       </div>
     </footer>
-
   </body>
 </html>
